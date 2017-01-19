@@ -1,10 +1,10 @@
 /**
- * Created by mrabalaji on 1/16/17.
+ * Created by  on 1/16/17.
  */
 @SuppressWarnings("GroovyAssignabilityCheck")
 class PreScreening {
 
-    static def run(Map attrs, int reviewDetailsPerPage) {
+    static run(Map attrs, int reviewDetailsPerPage) {
         def groupedByFeatures = new HashMap()
         def each = attrs.reviewsList.each { Map<String, String> review ->
             String feature = review.get("feature")
@@ -39,7 +39,7 @@ class PreScreening {
 
     static void main(String [] args) {
         def preScreening = new PreScreening()
-        List<Map> input = new ArrayList();
+        List<Map> input = new ArrayList()
 
         def reviewOne = new HashMap()
         reviewOne.putAt "reviewId", "2874274"
